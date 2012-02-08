@@ -17,11 +17,6 @@ app.use(flatiron.plugins.cli, {
 //
 app.use(require('../lib/cli-config'));
 
-//
-// TODO: This shouldn't be necessary
-//
-app.inspect = require('cliff');
-
 if (!module.parent) {
   //
   // Start the application
