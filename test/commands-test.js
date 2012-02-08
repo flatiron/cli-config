@@ -4,15 +4,15 @@ var assert = require('assert'),
     path = require('path'),
     cliEasy = require('cli-easy');
 
-var fixturesDir = path.join(__dirname, 'fixtures'),
-    appBin = path.join(fixturesDir, 'app.js');
+var examplesDir = path.join(__dirname, '..', 'examples'),
+    appBin = path.join(examplesDir, 'app.js');
 
 cliEasy.describe('cli-config/commands')
   .discuss('When using the cli-config plugin')
     .discuss('app config set testing 1234')
       .use('node').args([appBin, 'config', 'set', 'testing', '1234'])
       .expect('should update the config file', function () {
-        var data = JSON.parse(fs.readFileSync(path.join(fixturesDir, 'test-config.json'), 'utf8'));
+        var data = JSON.parse(fs.readFileSync(path.join(examplesDir, 'test-config.json'), 'utf8'));
         assert.equal(data.testing, 1234);
         return true;
       })
@@ -28,7 +28,7 @@ cliEasy.describe('cli-config/commands')
     .discuss('app config delete testing')
       .use('node').args([appBin, 'config', 'delete', 'testing'])
       .expect('should update the config file', function () {
-        var data = JSON.parse(fs.readFileSync(path.join(fixturesDir, 'test-config.json'), 'utf8'));
+        var data = JSON.parse(fs.readFileSync(path.join(examplesDir, 'test-config.json'), 'utf8'));
         assert.isTrue(!data.testing);
         return true;
       })
