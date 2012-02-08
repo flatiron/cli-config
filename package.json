@@ -15,6 +15,7 @@
   },
   "devDependencies": {
     "flatiron": "~0.1.9",
+    "cli-easy": "0.1.x",
     "vows": "0.6.x"
   },
   "main": "./lib/cli-config",
