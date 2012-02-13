@@ -1,7 +1,7 @@
 {
   "name": "flatiron-cli-config",
-  "description": "Encapsulated commands for managing configuration in flatiron CLI apps",
   "version": "0.1.1",
+  "description": "Encapsulated commands for managing configuration in flatiron CLI apps",
   "author": "Nodejitsu Inc <info@nodejitsu.com>",
   "contributors": [
     { "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }
