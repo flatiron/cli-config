@@ -7,8 +7,8 @@ var assert = require('assert'),
 var examplesDir = path.join(__dirname, '..', 'examples'),
     appBin = path.join(examplesDir, 'app.js');
 
-cliEasy.describe('cli-config/commands')
-  .discuss('When using the cli-config plugin')
+cliEasy.describe('flatiron-cli-config/commands')
+  .discuss('When using the flatiron-cli-config plugin')
     .discuss('app config set testing 1234')
       .use('node').args([appBin, 'config', 'set', 'testing', '1234'])
       .expect('should update the config file', function () {

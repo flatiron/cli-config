@@ -9,13 +9,13 @@ var path = require('path'),
 app.name = 'app.js';
 app.config.file({ file: path.join(__dirname, 'test-config.json') });
 app.use(flatiron.plugins.cli, {
-  usage: 'A simple CLI app using cli-config'
+  usage: 'A simple CLI app using flatiron-cli-config'
 });
 
 //
-// Expose CLI commands using `cli-config`
+// Expose CLI commands using `flatiron-cli-config`
 //
-app.use(require('../lib/cli-config'));
+app.use(require('../lib/flatiron-cli-config'));
 
 if (!module.parent) {
   //

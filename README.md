@@ -1,9 +1,9 @@
-# cli-config
+# flatiron-cli-config
 
 Encapsulated commands for managing configuration in flatiron CLI apps
 
 ## Example
-At its core `cli-config` is a broadway-compatible plugin which can be used by any `flatiron` application:
+At its core `flatiron-cli-config` is a broadway-compatible plugin which can be used by any `flatiron` application:
 
 ``` js
   var flatiron = require('flatiron'),
@@ -16,13 +16,13 @@ At its core `cli-config` is a broadway-compatible plugin which can be used by an
   app.name = 'app.js';
   app.config.file({ file: 'test-config.json' });
   app.use(flatiron.plugins.cli, {
-    usage: 'A simple CLI app using cli-config'
+    usage: 'A simple CLI app using flatiron-cli-config'
   });
 
   //
-  // Expose CLI commands using `cli-config`
+  // Expose CLI commands using `flatiron-cli-config`
   //
-  app.use(require('cli-config'));
+  app.use(require('flatiron-cli-config'));
   
   if (!module.parent) {
     //
@@ -94,9 +94,9 @@ And the contents of `test-config.json` will be:
   curl http://npmjs.org/install.sh | sh
 ```
 
-### Installing cli-config
+### Installing flatiron-cli-config
 ```
-  [sudo] npm install cli-config
+  [sudo] npm install flatiron-cli-config
 ```
 
 ## Run Tests

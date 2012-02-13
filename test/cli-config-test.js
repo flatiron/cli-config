@@ -2,8 +2,8 @@
 var assert = require('assert'),
     vows = require('vows');
     
-vows.describe('cli-config').addBatch({
-  "When a flatiron plugin uses `cli-config`": {
+vows.describe('flatiron-cli-config').addBatch({
+  "When a flatiron plugin uses `flatiron-cli-config`": {
     topic: require('../examples/app'),
     "should correctly extend the object": function (app) {
       assert.isObject(app.commands);
