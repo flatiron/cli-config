@@ -2,13 +2,13 @@
   "name": "flatiron-cli-config",
   "version": "0.1.2",
   "description": "Encapsulated commands for managing configuration in flatiron CLI apps",
-  "author": "Nodejitsu Inc <info@nodejitsu.com>",
-  "contributors": [
-    { "name": "Charlie Robbins", "email": "charlie@nodejitsu.com" }
+  "author": "Nodejitsu Inc. <info@nodejitsu.com>",
+  "maintainers": [
+    "indexzero <charlie@nodejitsu.com>"
   ],
   "repository": {
     "type": "git",
-    "url": "http://github.com/flatiron/flatiron-cli-config.git" 
+    "url": "http://github.com/flatiron/flatiron-cli-config.git"
   },
   "peerDependencies": {
     "flatiron": "~0.1.9"
@@ -22,6 +22,8 @@
   "scripts": {
     "test": "vows --spec --isolate"
   },
-  "engines": { "node": ">= 0.6.0" }
+  "engines": {
+    "node": ">= 0.6.0"
+  }
 }
 
