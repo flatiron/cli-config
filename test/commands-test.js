@@ -39,6 +39,6 @@ cliEasy.describe('flatiron-cli-config/commands')
       // REMARK: This syntax is really ackward
       //
       .expect('should indicate the setting has been deleted', '', /error/)
-    
-    
+
+
   .export(module);

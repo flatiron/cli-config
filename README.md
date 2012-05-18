@@ -23,7 +23,7 @@ At its core `flatiron-cli-config` is a broadway-compatible plugin which can be u
   // Expose CLI commands using `flatiron-cli-config`
   //
   app.use(require('flatiron-cli-config'));
-  
+
   if (!module.parent) {
     //
     // Start the application
@@ -45,7 +45,7 @@ The output will be:
   data: foo bar
 ```
 
-And the contents of `test-config.json` will be: 
+And the contents of `test-config.json` will be:
 
 ```
   { "foo": "bar" }
@@ -59,7 +59,7 @@ And the contents of `test-config.json` will be:
   $ node examples/app.js help config
   help:   `app.js config *` commands allow you to edit your
   help:   local app.js configuration file. Valid commands are:
-  help:   
+  help:
   help:   app.js config list
   help:   app.js config set    <key> <value>
   help:   app.js config get    <key>
@@ -73,13 +73,13 @@ And the contents of `test-config.json` will be:
     //
     // Name of the store in `app.config` to use for `config list`. [Default: all config]
     //
-    store: 'file' 
-    
+    store: 'file'
+
     //
     // Set of properties which cannot be deleted using `config delete <key>`
     //
     restricted: ['foo', 'bar'],
-    
+
     //
     // Set of functions which will execute before named commands: get, set, list, delete
     //
