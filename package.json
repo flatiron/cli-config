@@ -11,7 +11,7 @@
     "url": "https://github.com/flatiron/cli-config.git"
   },
   "peerDependencies": {
-    "flatiron": "~0.1.9"
+    "flatiron": "0.3.x"
   },
   "devDependencies": {
     "flatiron": "~0.2.0",
