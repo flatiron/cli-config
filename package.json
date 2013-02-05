@@ -14,7 +14,7 @@
     "flatiron": "0.3.x"
   },
   "devDependencies": {
-    "flatiron": "~0.2.0",
+    "flatiron": "0.3.x",
     "cli-easy": "0.1.x",
     "vows": "0.6.x"
   },
